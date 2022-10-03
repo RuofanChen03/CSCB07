@@ -6,8 +6,8 @@ public class Driver {
 		  Polynomial p = new Polynomial(); 
 		  System.out.println(p.evaluate(3)); 
 		  
-		  double [] c1 = {6,5};
-		  int[] d1 = {0, 3};
+		  double [] c1 = {6,1,5};
+		  int[] d1 = {0, 1, 3};
 		  Polynomial p1 = new Polynomial(c1, d1);
 		  p1.printPolynomial();
 		  
@@ -38,3 +38,4 @@ public class Driver {
 		  System.out.println("Check if product saved in b.txt!");
 	 }
 }
+

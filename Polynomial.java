@@ -42,8 +42,18 @@ public class Polynomial {
 			if (!a.equals("")) {
 				if(a.indexOf("x") > -1) {
 					String[] parts = a.split("x");
-					coeffArr[counter] = Double.parseDouble(parts[0]);
-					expArr[counter] = Integer.parseInt(parts[1]);
+					if ((parts.length == 0) || (parts[0] == "")) {
+						coeffArr[counter] = 1.0;
+					}
+					else {
+						coeffArr[counter] = Double.parseDouble(parts[0]);
+					}
+					if ((parts.length == 0) || (parts[1] == "")) {
+						expArr[counter] = 1;
+					}
+					else {
+						expArr[counter] = Integer.parseInt(parts[1]);
+					}
 				}
 				else {
 					coeffArr[counter] = Double.parseDouble(a);
