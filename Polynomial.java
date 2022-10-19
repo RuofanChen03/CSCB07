@@ -6,7 +6,7 @@ public class Polynomial {
 	int[] expArr;
 	
 	public Polynomial(){
-		coeffArr = new double[1];
+		coeffArr = new double[1]; //should have had null for values or arrays of len 0 (since 0 coeff is not allowed)
 		coeffArr[0] = 0;
 		expArr = new int[1];
 		expArr[0] = 0;
